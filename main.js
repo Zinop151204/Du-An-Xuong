@@ -1,13 +1,12 @@
-const checkopen = document.querySelector('#checkopen');
-const checkclose = document.querySelector('#checkclose');
-const headernav= document.querySelector('.main-menu');
-checkopen.addEventListener('click',()=>{
-    // headernav.style.display = 'Block';
-    headernav.style.left = 0;
-    headernav.style.opacity = 1;
-})
-checkclose.addEventListener('click',()=>{
-    // headernav.style.display = 'Block';
-    headernav.style.left = '100%';
-    headernav.style.opacity = 0;
-})
+// JavaScript để hiển thị và ẩn form đăng nhập khi người dùng nhấp vào liên kết "Đăng nhập" và nút "Đóng"
+document.getElementById("loginLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
+    var loginForm = document.getElementById("loginForm");
+    loginForm.style.display = "block";
+});
+
+document.getElementById("closeLoginForm").addEventListener("click", function(event) {
+    event.preventDefault(); // Ngăn chặn hành động mặc định của thẻ a
+    var loginForm = document.getElementById("loginForm");
+    loginForm.style.display = "none";
+});

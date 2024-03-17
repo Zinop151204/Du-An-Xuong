@@ -1225,12 +1225,21 @@ img {
 //--------------------------- css đến phần đăng nhaapj
 .login {
     width: 100%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    display: none;
 
     &-form {
         width: 800px;
         height: 600px;
         margin: auto;
         margin-top: 50px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(8, 8, 8, 0.404);
     }
 
     &-form h2 {

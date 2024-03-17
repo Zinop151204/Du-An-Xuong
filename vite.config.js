@@ -11,7 +11,7 @@ export default defineConfig({
         datail: resolve(__dirname, './datail-product.html'),
         cart: resolve(__dirname, './cart.html'),
         pay: resolve(__dirname, './pay-product.html'),
-        login: resolve(__dirname, './login.html'),
+        // login: resolve(__dirname, './login.html'),
       },
     },
   },
